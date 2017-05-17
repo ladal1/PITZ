@@ -1,8 +1,8 @@
 package xloul;
 
-public class Main {
 
+public class damy {
     public static void main(String[] args) {
-	// write your code here
+        
     }
 }

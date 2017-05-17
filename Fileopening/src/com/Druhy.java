@@ -39,7 +39,7 @@ public class Druhy {
     }
     private static boolean jePravouhly(int a, int b, int c) throws NeplatnyTrojuhelnikException{
         if (a<b+c && b<a+c && c<a+b) {
-            return (Math.sqrt(a) + Math.sqrt(b) == Math.sqrt(c)) || (Math.sqrt(b) + Math.sqrt(c) == Math.sqrt(a)) || (Math.sqrt(a) + Math.sqrt(c) == Math.sqrt(b));
+            return (Math.pow(a,2) + Math.pow(b,2) == Math.pow(c,2)) || (Math.pow(b,2) + Math.pow(c,2) == Math.pow(a,2)) || (Math.pow(a,2) + Math.pow(c,2) == Math.pow(b,2));
         }
         else{
             throw new NeplatnyTrojuhelnikException();
